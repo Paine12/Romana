@@ -1,0 +1,66 @@
+body {
+    background-color: whitesmoke;
+    font-family: "Kameron", serif;
+}
+
+
+.no-inherit{
+    all: unset;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+
+.lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.categorie {
+    width: 30%;
+    min-width: 300px;
+}
+
+.eseu {
+    width: 50%;
+    margin: auto;
+}
+
+.opera {
+    font-size: larger;
+}
+
+.headline {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.logo {
+    width: 50px;
+    margin: auto;
+}
+
+.divider {
+    width: 50%;
+    height: 0.5px;
+    border: 2px solid black;
+    background-color: black;
+    margin: auto;
+}
+
+.inline {
+    display: inline;
+    font-size: xx-large;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

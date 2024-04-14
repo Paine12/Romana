@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/Stylesheets/styles.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=M+PLUS+Code+Latin:wght@100..700&family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="headline">
+        <h1 class="headline">Esee</h1>
+        <img class="logo" src="/Stylesheets/stilo.png">
+    </div>
+    <div class="divider"></div>
+
+    <div class="lista">
+        {%for categorii in pages%}
+        <div class="categorie">
+            <h3><bold>{{categorii}}</bold></h3>
+            <ul>
+                {%for page in pages[categorii]%}
+                    <li class="opera"><a href={{categorii}}/{{page}}><b>{{pages[categorii][page]["nume"]}}</b> de {{pages[categorii][page]["autor"]}}</a></li>
+                {%endfor%}
+            </ul>
+        </div>
+        
+        {%endfor%}
+    </div>
+</body>
+</html>
